@@ -8,3 +8,9 @@ body {
     min-height: 100vh;
     background-color: #FAFCFE!important;
 }
+
+.customDialog {
+  mat-dialog-container {
+    background: #7d8381;
+  }
+}
