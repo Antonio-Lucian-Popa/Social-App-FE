@@ -20,7 +20,7 @@ export class CreatePostComponent implements OnInit {
       {
         data: {},
         panelClass: "customDialog",
-        width: '300px'
+        width: '450px',
       }
       );
     dialogRef.afterClosed().subscribe();
