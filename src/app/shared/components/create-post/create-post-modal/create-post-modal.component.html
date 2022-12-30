@@ -22,10 +22,17 @@
       </mat-form-field>
     </div>
   </mat-dialog-content>
-  <div mat-dialog-actions class="dialog-action-container">
-    <mat-icon class="material-symbols-outlined add-image-icon" (click)="fileInput.click()">
-      image
+  <div mat-dialog-actions class="dialog-action-container d-flex align-items-center justify-content-between">
+    <div class="container-inputs d-flex align-items-center">
+      <mat-icon class="material-symbols-outlined add-image-icon" (click)="fileInput.click()">
+        image
+      </mat-icon>
+      <input #fileInput type="file" (change)="onFileInput($event)" style="display:none;"
+        accept="image/png, image/gif, image/jpeg image/jpeg" />
+
+    </div>
+    <mat-icon class="material-symbols-outlined send-icon" (click)="createPost()">
+      send
     </mat-icon>
-    <input #fileInput type="file" (change)="onFileInput($event)" style="display:none;" accept="image/png, image/gif, image/jpeg image/jpeg" />
   </div>
 </div>

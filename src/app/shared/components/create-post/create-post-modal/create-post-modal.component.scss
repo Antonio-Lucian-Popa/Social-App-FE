@@ -6,6 +6,7 @@
 
     mat-icon {
       text-align: end;
+      cursor: pointer;
     }
   }
 
@@ -15,6 +16,7 @@
 
   .user-info {
     margin: 10px 0px;
+
     .container-image {
       width: 40px;
       margin-right: 10px;
@@ -33,5 +35,21 @@
     }
   }
 
-  .dialog-action-container {}
+  .dialog-action-container {
+
+    .container-inputs {
+      .add-image-icon {
+        color: #F7B928;
+        font-size: 25px;
+      }
+    }
+
+    mat-icon {
+      cursor: pointer;
+    }
+
+    .send-icon {
+      color: #3E8BFC;
+    }
+  }
 }

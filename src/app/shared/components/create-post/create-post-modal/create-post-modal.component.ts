@@ -35,6 +35,10 @@ export class CreatePostModalComponent implements OnInit {
     }
   }
 
+  createPost(): void {
+    // TODO: add service to send a post request with post entity from user
+  }
+
   closeDialog(): void {
     this.dialogRef.close();
   }
